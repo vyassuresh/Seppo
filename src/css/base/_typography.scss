@@ -5,16 +5,39 @@
   color: $color-white;
 }
 
+.heading-secondary {
+  font-size: rem(60);
+  line-height: 1.2;
+}
+
 .heading-tertiary {
   color: $color-white;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 100%;
 }
 
 .heading-four {
   font-size: rem(46);
   font-weight: 700;
   color: $color-white;
+}
+
+.text-gray {
+  color: $color-gray;
+  line-height: 2;
+  font-size: rem(18);
+}
+
+.title-up-gray {
+  color: $color-gray;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.text-outline {
+  text-shadow: -1px 1px 0 $color-gray, 1px 1px 0 $color-gray,
+    1px -1px 0 $color-gray, -1px -1px 0 $color-gray;
+  color: inherit;
 }

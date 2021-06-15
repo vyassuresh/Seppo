@@ -11,6 +11,7 @@
     />
   </head>
   <body>
+    <!-- Navigation menu -->
     <header class="navigation">
       <nav class="navigation__menu">
         <img src="images/logo.png" alt="Seppo logo" class="navigation__logo" />
@@ -52,55 +53,70 @@
       </nav>
     </header>
 
-    <div id="content">
-      <!-- Home section -->
-      <section class="home" id="home">
-        <div class="container">
-          <h1 class="heading-primary u-mb-lg">
-            Technology<br />& Visual Agency
-          </h1>
+    <!-- hero section -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1 class="heading-primary u-mb-lg">
+          Technology<br />& Visual Agency
+        </h1>
+        <a href="#portfolio" class="btn btn--primary">Learn more</a>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="services">
+      <div class="section-title">
+        <h3 class="heading-tertiary">Services</h3>
+      </div>
+      <div class="container grid grid--auto">
+          <div class="services__item">
+            <div class="services__number text-outline">1</div>
+            <div class="heading-four">Preciese</div>
+            <p class="text-gray u-mt-15 u-mb-md">
+              Curabitur cursus mattis ligula a maximus pellentesque in purus
+              malesuada pharetra eros.
+            </p>
+            <a href="#portfolio" class="btn btn--circle">More</a>
+          </div>
+          <div class="services__item">
+            <div class="services__number text-outline">2</div>
+            <div class="heading-four">Support</div>
+            <p class="text-gray u-mt-15 u-mb-md">
+              Est sem integer suscipit enim quis dictum feugiat etiam
+              pellentesque curabitur donec porttitor.
+            </p>
+            <a href="#portfolio" class="btn btn--circle">More</a>
+          </div>
+          <div class="services__item">
+            <div class="services__number text-outline">3</div>
+            <div class="heading-four">Responsive</div>
+            <p class="text-gray u-mt-15 u-mb-md">
+              Donec vel est sem integer suscipit enim quis lorem posuere
+              vestibulum metus tempor vitae.
+            </p>
+            <a href="#portfolio" class="btn btn--circle">More</a>
+          </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about">
+      <div class="section-title"><h3 class="heading-tertiary">About</h3></div>
+      <div class="container grid grid--auto">
+        <div class="about__text">
+          <p class="title-up-gray u-mb-30">Who we are</p>
+          <h2 class="heading-secondary u-mb-md">
+            Live up to <br>your creative <br>potential.
+          </h2>
+          <p class="text-gray u-mb-lg">
+            Code the energy hidden in matter citizens of distant epochs from
+            which we spring drake equation perga inconspicuous motespatch
+            clean designed code and energy matter.
+          </p>
           <a href="#portfolio" class="btn btn--primary">Learn more</a>
         </div>
-      </section>
-
-      <!-- Services section -->
-      <section class="services">
-        <div class="section-title">
-          <h3 class="heading-tertiary">Services</h3>
-        </div>
-
-        <div class="container">
-          <div class="services__wrapper">
-            <div class="services__item">
-              <div class="services__number">1</div>
-              <div class="heading-four">Preciese</div>
-              <p class="services__desc u-mt-15 u-mb-md">
-                Curabitur cursus mattis ligula a maximus pellentesque in purus
-                malesuada pharetra eros.
-              </p>
-              <a href="#portfolio" class="btn btn--circle">More</a>
-            </div>
-            <div class="services__item">
-              <div class="services__number">2</div>
-              <div class="heading-four">Support</div>
-              <p class="services__desc u-mt-15 u-mb-md">
-                Est sem integer suscipit enim quis dictum feugiat etiam
-                pellentesque curabitur donec porttitor.
-              </p>
-              <a href="#portfolio" class="btn btn--circle">More</a>
-            </div>
-            <div class="services__item">
-              <div class="services__number">3</div>
-              <div class="heading-four">Responsive</div>
-              <p class="services__desc u-mt-15 u-mb-md">
-                Donec vel est sem integer suscipit enim quis lorem posuere
-                vestibulum metus tempor vitae.
-              </p>
-              <a href="#portfolio" class="btn btn--circle">More</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+        <img src="images/about_01.jpg" class="about__image"></img>
+      </div>
+    </section>
   </body>
 </html>

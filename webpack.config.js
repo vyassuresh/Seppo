@@ -62,7 +62,6 @@ module.exports = {
                     loadPaths: ["images/"],
                     basePath: "docs",
                   }),
-                  require("postcss-uncss"),
                 ],
               },
               sourceMap: true,

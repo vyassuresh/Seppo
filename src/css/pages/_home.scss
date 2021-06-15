@@ -1,0 +1,22 @@
+// hero section
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url("../images/hero_image_01.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// Services section
+.services {
+  background-color: $color-black;
+
+  &__number {
+    font-size: rem(270);
+    font-weight: 700;
+    height: rem(170);
+    overflow: hidden;
+    line-height: 100%;
+  }
+}

@@ -33,6 +33,7 @@
       padding-left: rem(45);
       display: block;
       transition: all 0.2s ease-out;
+      display: inline-block;
 
       &::before {
         content: "";

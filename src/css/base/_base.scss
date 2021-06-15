@@ -21,4 +21,9 @@ body {
 
 section {
   position: relative;
+  padding: rem(200) 0 rem(160) 0;
+
+  &--no-padding {
+    padding: 0;
+  }
 }
