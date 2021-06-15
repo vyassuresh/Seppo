@@ -1,0 +1,77 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+.testimonials {
+  background-color: $color-black;
+  padding: rem(130) rem(130);
+  position: relative;
+
+  &__quote {
+    width: rem(90);
+  }
+
+  &__text {
+    font-size: rem(28);
+    line-height: 1.7;
+    color: $color-gray;
+  }
+
+  &__img {
+    border-radius: 100px;
+  }
+
+  &__author {
+    display: inline-flex;
+    align-items: center;
+
+    & > *:first-child {
+      margin-right: rem(30px);
+    }
+
+    & > *:nth-child(2) {
+      margin-right: rem(20px);
+    }
+  }
+
+  &__navigation {
+    display: inline-flex;
+    width: rem(75);
+    justify-content: space-between;
+    position: absolute;
+    bottom: rem(30);
+    right: 0;
+
+    & > * {
+      width: rem(30);
+      opacity: 0.6;
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// Fade transition between slides
+.glide__slides {
+  transform: translate3d(0, 0, 0) !important;
+}
+
+.glide__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  order: 2;
+  opacity: 0;
+  margin: 0 !important;
+  transition: opacity 0.5s ease-in-out;
+
+  &.glide__slide--active {
+    position: relative;
+    order: 1;
+    opacity: 1;
+    z-index: 1;
+  }
+}

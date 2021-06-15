@@ -29,11 +29,18 @@
   font-size: rem(18);
 }
 
-.title-up-gray {
-  color: $color-gray;
+.title-up {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 400;
+
+  &--gray {
+    color: $color-gray;
+  }
+
+  &--white {
+    color: $color-white;
+  }
 }
 
 .text-outline {

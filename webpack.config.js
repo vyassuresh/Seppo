@@ -34,7 +34,7 @@ module.exports = {
         use: {
           loader: "url-loader",
           options: {
-            limit: 5000000,
+            limit: 5000,
             name: "images/[name].[ext]",
           },
         },
@@ -44,11 +44,12 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            // options: { publicPath: "" },
+            options: { publicPath: "" },
           },
           {
             loader: "css-loader",
             options: {
+              url: false,
               sourceMap: true,
             },
           },
@@ -56,13 +57,7 @@ module.exports = {
             loader: "postcss-loader",
             options: {
               postcssOptions: {
-                plugins: [
-                  require("autoprefixer"),
-                  require("postcss-assets")({
-                    loadPaths: ["images/"],
-                    basePath: "docs",
-                  }),
-                ],
+                plugins: [require("autoprefixer")],
               },
               sourceMap: true,
             },
