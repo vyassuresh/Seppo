@@ -1,0 +1,8 @@
+.home {
+  height: calc(100vh - 80px);
+  background-image: url("../images/hero_image_01.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -1,0 +1,20 @@
+.heading-primary {
+  font-size: rem(80);
+  font-weight: 700;
+  line-height: 1.2;
+  color: $color-white;
+}
+
+.heading-tertiary {
+  color: $color-white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 100%;
+}
+
+.heading-four {
+  font-size: rem(46);
+  font-weight: 700;
+  color: $color-white;
+}

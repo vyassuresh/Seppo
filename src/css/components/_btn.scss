@@ -1,0 +1,65 @@
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: rem(14px);
+    color: $color-white;
+  }
+
+  &--primary {
+    &:link,
+    &:visited {
+      background-color: $color-primary;
+      padding: rem(20) rem(40);
+      border: 2px solid $color-primary;
+      border-radius: rem(200);
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: $color-primary;
+    }
+  }
+
+  &--circle {
+    &:link,
+    &:visited {
+      font-size: rem(17);
+      position: relative;
+      padding-left: rem(45);
+      display: block;
+      transition: all 0.2s ease-out;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: rem(-2);
+        left: 0;
+        height: rem(30);
+        width: rem(30);
+        border: 2px solid $color-white;
+        border-radius: 100px;
+        transition: all 0.2s ease-out;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      padding-left: rem(40);
+
+      &::before {
+        width: rem(130px);
+        height: rem(50);
+        top: rem(-12);
+      }
+    }
+  }
+
+  &--gray {
+    color: $color-gray;
+  }
+}

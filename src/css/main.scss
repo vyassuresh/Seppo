@@ -1,11 +1,15 @@
-html {
-  box-sizing: border-box;
-}
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/animations";
+
+@import "components/btn";
+@import "components/navigation";
+@import "components/section-title";
+@import "components/services";
+
+@import "layout/home";

@@ -1,0 +1,28 @@
+.services {
+  background-color: $color-black;
+
+  &__wrapper {
+    padding: rem(200) 0 rem(115) 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(160), 1fr));
+    grid-gap: rem(90);
+    position: relative;
+  }
+
+  &__desc {
+    color: $color-gray;
+    line-height: 2;
+    font-size: rem(18);
+  }
+
+  &__number {
+    text-shadow: -1px 1px 0 $color-gray, 1px 1px 0 $color-gray,
+      1px -1px 0 $color-gray, -1px -1px 0 $color-gray;
+    color: $color-black;
+    font-size: rem(270);
+    font-weight: 700;
+    height: rem(170);
+    overflow: hidden;
+    line-height: 100%;
+  }
+}

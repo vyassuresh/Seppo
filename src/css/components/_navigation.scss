@@ -1,0 +1,35 @@
+.navigation {
+  background-color: $color-dark;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: rem(15);
+  }
+  &__logo {
+    height: rem(50);
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-white;
+      text-decoration: none;
+      font-size: rem(14);
+      padding: rem(22);
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+    }
+  }
+}

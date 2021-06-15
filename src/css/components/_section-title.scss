@@ -1,0 +1,23 @@
+.section-title {
+  height: rem(130);
+  background-color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(300px);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &::after {
+    content: "";
+    height: 0;
+    width: 0;
+    border-width: rem(130) rem(50) 0 0;
+    border-color: $color-primary transparent;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    right: rem(-50);
+  }
+}
