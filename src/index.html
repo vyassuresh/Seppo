@@ -11,6 +11,18 @@
     />
   </head>
   <body>
+    <!-- SVG defs -->
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-cross" viewBox="0 0 32 32">
+<path d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>
+</symbol>
+<symbol id="icon-checkmark" viewBox="0 0 32 32">
+<path d="M27 4l-15 15-7-7-5 5 12 12 20-20z"></path>
+</symbol>
+</defs>
+    </svg>
+
     <!-- Navigation menu -->
     <header class="navigation">
       <nav class="navigation__menu">
@@ -231,6 +243,55 @@
             </div>
           </a>
         </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing section -->
+    <section class="section-pricing">
+      <div class="section-title"><h3 class="heading-tertiary">Pricing</h3></div>
+      <div class="container pricing grid grid--auto">
+        <div class="pricing__item">
+          <span class="pricing__num text-outline">1</span>
+          <p class="pricing__title">Basic</p>
+          <p class="pricing__price">$25</p>
+          <p class="title-up title-up--gray">Per month</p>
+          <ul class="u-mt-30">
+            <li class="pricing__feature"><svg class="icon icon__checkmark"><use xlink:href="#icon-checkmark"></use></svg> Unlimited Support</li>
+            <li class="pricing__feature"><svg class="icon icon__checkmark"><use xlink:href="#icon-checkmark"></use></svg> 5GB Server Space</li>
+            <li class="pricing__feature"><svg class="icon icon__checkmark"><use xlink:href="#icon-checkmark"></use></svg> 2 Users per Project</li>
+            <li class="pricing__feature"><svg class="icon icon__cross"><use xlink:href="#icon-cross"></use></svg> Email Integration</li>
+            <li class="pricing__feature"><svg class="icon icon__cross"><use xlink:href="#icon-cross"></use></svg> Unlimited Downloads</li>
+          </ul>
+          <div class="u-mt-lg u-center"><a href="#" class="btn btn--primary">Choose Plan</a></div>
+        </div>
+        <div class="pricing__item">
+          <span class="pricing__num text-outline">2</span>
+          <p class="pricing__title">Advanced</p>
+          <p class="pricing__price">$50</p>
+          <p class="title-up title-up--gray">Per month</p>
+          <ul class="u-mt-30">
+            <li class="pricing__feature"><svg class="icon icon__checkmark"><use xlink:href="#icon-checkmark"></use></svg> Unlimited Support</li>
+            <li class="pricing__feature"><svg class="icon icon__checkmark"><use xlink:href="#icon-checkmark"></use></svg> 5GB Server Space</li>
+            <li class="pricing__feature"><svg class="icon icon__checkmark"><use xlink:href="#icon-checkmark"></use></svg> 2 Users per Project</li>
+            <li class="pricing__feature"><svg class="icon icon__checkmark"><use xlink:href="#icon-checkmark"></use></svg> Email Integration</li>
+            <li class="pricing__feature"><svg class="icon icon__cross"><use xlink:href="#icon-cross"></use></svg> Unlimited Downloads</li>
+          </ul>
+          <div class="u-mt-lg u-center"><a href="#" class="btn btn--primary">Choose Plan</a></div>
+        </div>
+        <div class="pricing__item">
+          <span class="pricing__num text-outline">3</span>
+          <p class="pricing__title">Expert</p>
+          <p class="pricing__price">$75</p>
+          <p class="title-up title-up--gray">Per month</p>
+          <ul class="u-mt-30">
+            <li class="pricing__feature"><svg class="icon icon__checkmark"><use xlink:href="#icon-checkmark"></use></svg> Unlimited Support</li>
+            <li class="pricing__feature"><svg class="icon icon__checkmark"><use xlink:href="#icon-checkmark"></use></svg> 5GB Server Space</li>
+            <li class="pricing__feature"><svg class="icon icon__checkmark"><use xlink:href="#icon-checkmark"></use></svg> 2 Users per Project</li>
+            <li class="pricing__feature"><svg class="icon icon__checkmark"><use xlink:href="#icon-checkmark"></use></svg> Email Integration</li>
+            <li class="pricing__feature"><svg class="icon icon__checkmark"><use xlink:href="#icon-checkmark"></use></svg> Unlimited Downloads</li>
+          </ul>
+          <div class="u-mt-lg u-center"><a href="#" class="btn btn--primary">Choose Plan</a></div>
         </div>
       </div>
     </section>

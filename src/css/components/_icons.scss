@@ -1,0 +1,15 @@
+.icon {
+  &__cross {
+    width: rem(16);
+    height: rem(16);
+    fill: $color-gray;
+    margin-right: rem(25);
+  }
+
+  &__checkmark {
+    width: rem(16);
+    height: rem(16);
+    fill: $color-primary;
+    margin-right: rem(25);
+  }
+}

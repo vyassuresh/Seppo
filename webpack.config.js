@@ -40,7 +40,7 @@ module.exports = {
         },
       },
       {
-        test: /\.scss$/i,
+        test: /\.s?css$/i,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -66,6 +66,18 @@ module.exports = {
             loader: "sass-loader",
             options: {
               sourceMap: true,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?[a-z0-9#=&.]+)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/",
             },
           },
         ],
