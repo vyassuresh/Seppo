@@ -1,0 +1,54 @@
+.member {
+  $member: &;
+
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+
+  &:not(:last-child) {
+    margin-bottom: rem(70);
+  }
+
+  &__text {
+    padding: rem(60) rem(100);
+    width: rem(600);
+    background-color: $color-white;
+    align-self: center;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__social {
+    height: rem(90);
+    width: rem(330);
+    padding: 0 rem(50);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-primary;
+    position: absolute;
+    bottom: rem(-45);
+    z-index: 10;
+  }
+
+  &--left {
+    #{$member}__text {
+      margin-left: rem(-130);
+    }
+
+    #{$member}__social {
+      left: 0;
+    }
+  }
+
+  &--right {
+    #{$member}__text {
+      margin-right: rem(-130);
+    }
+
+    #{$member}__social {
+      right: 0;
+    }
+  }
+}

@@ -23,8 +23,7 @@
   font-size: rem(46);
   line-height: 1.2;
 
-  &--black-sm {
-    color: $color-black;
+  &--sm {
     font-size: rem(30);
   }
 }
@@ -61,4 +60,8 @@
 
 .color-white {
   color: $color-white;
+}
+
+.color-black {
+  color: $color-black;
 }

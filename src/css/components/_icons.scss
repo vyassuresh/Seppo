@@ -1,15 +1,26 @@
 .icon {
-  &__cross {
+  &--tick {
     width: rem(16);
     height: rem(16);
-    fill: $color-gray;
     margin-right: rem(25);
   }
+  &--cross {
+    fill: $color-gray;
+  }
 
-  &__checkmark {
+  &--checkmark {
     width: rem(16);
-    height: rem(16);
     fill: $color-primary;
-    margin-right: rem(25);
+  }
+
+  &--social {
+    width: rem(26);
+    height: rem(26);
+    fill: $color-white;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
