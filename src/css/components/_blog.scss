@@ -1,0 +1,51 @@
+.blog {
+  &__item {
+    &:first-child {
+      .blog__img {
+        background-image: url("../images/blog_img_01.jpg");
+      }
+    }
+    &:nth-child(2) {
+      .blog__img {
+        background-image: url("../images/blog_img_02.jpg");
+      }
+    }
+    &:last-child {
+      .blog__img {
+        background-image: url("../images/blog_img_03.jpg");
+      }
+    }
+  }
+
+  &__thumbnail {
+    overflow: hidden;
+    display: block;
+  }
+  &__img {
+    background-size: cover;
+    height: rem(600);
+    width: 100%;
+    transition: all 0.2s ease-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+      transform: scale(1.1);
+    }
+  }
+
+  &__title {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      transition: all 0.2s ease-out;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}

@@ -7,11 +7,13 @@
 @import "base/utilities";
 @import "base/animations";
 
-@import "components/btn";
-@import "components/navigation";
-@import "components/section-title";
-@import "components/_testimonials";
+@import "pages/home";
 
 @import "layout/grid";
 
-@import "pages/home";
+@import "components/btn";
+@import "components/navigation";
+@import "components/section-title";
+@import "components/testimonials";
+@import "components/blog";
+@import "components/portfolio";

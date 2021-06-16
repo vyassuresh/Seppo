@@ -18,9 +18,15 @@
 }
 
 .heading-four {
-  font-size: rem(46);
   font-weight: 700;
   color: $color-white;
+  font-size: rem(46);
+  line-height: 1.2;
+
+  &--black-sm {
+    color: $color-black;
+    font-size: rem(30);
+  }
 }
 
 .text-gray {
@@ -47,4 +53,12 @@
   text-shadow: -1px 1px 0 $color-gray, 1px 1px 0 $color-gray,
     1px -1px 0 $color-gray, -1px -1px 0 $color-gray;
   color: inherit;
+}
+
+.color-gray {
+  color: $color-gray;
+}
+
+.color-white {
+  color: $color-white;
 }

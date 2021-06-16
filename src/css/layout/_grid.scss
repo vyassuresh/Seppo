@@ -5,4 +5,8 @@
     grid-template-columns: repeat(auto-fit, minmax(rem(160), 1fr));
     gap: rem(90);
   }
+
+  &--sm {
+    gap: rem(60);
+  }
 }
